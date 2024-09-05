@@ -13,10 +13,10 @@
         <input type="text" name="name">
 
         <label for="descricao">Descrição</label>
-        <input type="text" name="cpf">
+        <input type="text" name="descricao">
 
         <label for="preco">Preço</label>
-        <input type="text" name="email">
+        <input type="text" name="preco">
 
         <input type="submit" value="Salvar">
     </form>
