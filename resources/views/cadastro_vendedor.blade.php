@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <form action="/criar_vendedor" method="post">
+    <form id="vendform" action="/criar_vendedor" method="post">
         @csrf
         <label for="name">Nome</label>
         <input type="text" name="name">
