@@ -1,0 +1,14 @@
+        body {
+            display: flex;
+            background-color: lightgrey;
+            margin-top: 400px;
+            height: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #btn{
+            background-color: green;
+            color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
