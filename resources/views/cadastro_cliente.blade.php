@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Criar Cliente</title>
+    <link rel="stylesheet" href="/css/style2.css">
 </head>
 <body>
-    <form action="/criar_cliente" method="post">
+        <p class="p">Cadastro de Vendedor</p>
+
+    <form id="clienform" action="/criar_cliente" method="post">
         @csrf
         <label for="name">Nome</label>
         <input type="text" name="name">
@@ -18,7 +21,7 @@
         <label for="email">Email</label>
         <input type="text" name="email">
 
-        <input type="submit" value="Salvar">
+        <input id="btn" type="submit" value="Salvar">
     </form>
 </body>
 </html>

@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+        <p class="p">Cadastro de Vendedor</p>
+
     <form id="vendform" action="/criar_vendedor" method="post">
         @csrf
         <label for="name">Nome</label>

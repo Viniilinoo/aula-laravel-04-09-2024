@@ -17,6 +17,8 @@ Route::post('/criar_usuario', [UserController::class, 'criar']);
 
 
 //produto
+Route::get('/cadastro_produto', [ProdutoController::class, 'formCriarProduto']);
+
 Route::post('/criar_produto', [ProdutoController::class, 'criar']);
 
 Route::get('/listar_produto', [ProdutoController::class, 'listar']);

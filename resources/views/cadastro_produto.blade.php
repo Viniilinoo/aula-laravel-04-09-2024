@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Criar usuario</title>
+    <link rel="stylesheet" href="/css/style3.css">
 </head>
 <body>
-    <form action="/criar_produto" method="post">
+        <p class="p">Cadastro de Produto</p>
+
+    <form id="prodform" action="/criar_produto" method="post">
         @csrf
         <label for="name">Nome</label>
         <input type="text" name="name">
@@ -18,7 +21,7 @@
         <label for="preco">Preço</label>
         <input type="text" name="preco">
 
-        <input type="submit" value="Salvar">
+        <input id="btn" type="submit" value="Salvar">
     </form>
 </body>
 </html>
