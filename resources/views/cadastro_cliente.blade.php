@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/css/style2.css">
 </head>
 <body>
-        <p class="p">Cadastro de Vendedor</p>
+        <p class="p">Cadastro de Cliente</p>
 
     <form id="clienform" action="/criar_cliente" method="post">
         @csrf
