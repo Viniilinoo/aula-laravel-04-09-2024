@@ -12,8 +12,8 @@
 
     <form id="prodform" action="/criar_produto" method="post">
         @csrf
-        <label for="name">Nome</label>
-        <input type="text" name="name">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome">
 
         <label for="descricao">Descrição</label>
         <input type="text" name="descricao">

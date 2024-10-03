@@ -26,4 +26,25 @@ class UserController extends Controller
         return view("cadastro_usuario");
     }
 
+    public function deletar($id) {
+        $user = new User;
+        $user->find($id)->delete();
+        return redirect('/listar_usuarios');
+    }
+
+    public function formEditarUsuario($id) {
+        $user = User::find($id);
+
+        return view('editar_usuario', ['user'=>$user]);
+    }
+
+    public function editar(Request $request) {
+        User::where('id', $request->id) -> update([
+            'name' => $request->name,
+            'cpf' => $request->cpf,
+            'email' => $request->email,
+        ]);
+
+        return redirect('/listar_usuarios');
+    }
 }
