@@ -32,4 +32,20 @@ class VendedorController extends Controller
         return redirect('/listar_vendedor');
     }
 
+    public function formEditarVendedor($id) {
+        $vendedor = Vendedor::find($id);
+
+        return view('editar_vendedor', ['vendedor'=>$vendedor]);
+
+    }
+
+    public function editarVendedor(Request $request) {
+        Vendedor::where('id', $request->id) -> update([
+            'name' => $request->name,
+            'matricula' => $request->matricula,
+            'comissao' => $request->comissao,
+        ]);
+            return redirect('/listar_vendedor');
+    }
+
 }

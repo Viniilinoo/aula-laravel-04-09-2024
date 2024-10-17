@@ -8,6 +8,9 @@
   <title>Lista de Usuarios</title>
 </head>
 <body>
+@if ($users->isEmpty())
+    <h1>Usuarios não encontrado</h1>
+  @else
   <table border="1">
     <tr>
       <th>Nome</th>
@@ -31,5 +34,6 @@
     </tr>
     @endforeach
   </table>
+  @endif
 </body>
 </html>

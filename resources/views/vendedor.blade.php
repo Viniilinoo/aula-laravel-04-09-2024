@@ -8,6 +8,9 @@
   <title>Lista de Usuarios</title>
 </head>
 <body>
+  @if ($vendedores->isEmpty())
+    <h1>Vendedores não encontrado</h1>
+  @else
   <table border="1">
     <tr>
       <th>Nome</th>
@@ -22,6 +25,7 @@
       <td>{{($vendedor->comissao)}}</td>
       <td>
       <form method="POST" action="/deletar_vendedor/{{$vendedor->id}}">
+      <a href="/editar_vendedor/{{$vendedor->id}}">Editar</a>
         @csrf
         {{ method_field("DELETE") }}
         <input type="submit" value="delete vendedor">
@@ -30,5 +34,6 @@
     </tr>
     @endforeach
   </table>
+  @endif
 </body>
 </html>

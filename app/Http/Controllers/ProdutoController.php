@@ -32,4 +32,20 @@ class ProdutoController extends Controller
         $produto->find($id)->delete();
         return redirect('/listar_produto');
     }
+
+    public function formEditarProduto($id) {
+        $produto = Produto::find($id);
+
+        return view('editar_produto', ['produto'=>$produto]);
+    }
+
+    public function editarProduto(Request $request) {
+        Produto::where('id', $request->id) -> update([
+            'nome' => $request->nome,
+            'descricao' => $request->descricao,
+            'preco' => $request->preco,
+        ]);
+
+        return redirect('/listar_produto');
+    }
 }
