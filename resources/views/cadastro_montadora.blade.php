@@ -8,15 +8,21 @@
     <link rel="stylesheet" href="/css/style3.css">
 </head>
 <body>
-        <p class="p">Cadastro de Produto</p>
+        <p class="p">Cadastro de Montadora</p>
 
     <form id="prodform" action="/criar_produto" method="post">
         @csrf
         <label for="nome">Nome</label>
         <input type="text" name="nome">
 
-        <label for="descricao">Descrição</label>
-        <input type="text" name="descricao">
+        <label for="nomeDoCarro">Nome Do Carro</label>
+        <input type="text" name="nomeDoCarro">
+
+        <label for="dtVenda">Data Venda</label>
+        <input type="date" name="dtVenda">
+
+        <label for="dtEntrega">Data Entrega</label>
+        <input type="date" name="dtEntrega">
 
         <label for="preco">Preço</label>
         <input type="text" name="preco">

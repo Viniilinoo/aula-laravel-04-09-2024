@@ -6,7 +6,7 @@
     <title>Página Incial</title>
 </head>
 <body>
-    <a href="/cadastro_usuario">Cadastro</a>
-    <a href="/listar_usuarios">Listar Usuário</a>
+    <a href="/cadastro_montadora">Montadora</a>
+    <a href="/listar_montadora">Listar Montadora</a>
 </body>
 </html>

@@ -10,13 +10,19 @@
         @csrf
         {{ method_field("PATCH") }}
         <label for="nome">Nome</label>
-        <input type="text" name="nome" value="{{$produto->nome}}">
+        <input type="text" name="nome">
 
-        <label for="descricao">Descricão</label>
-        <input type="text" name="descricao" value="{{$produto->descricao}}">
+        <label for="nomeDoCarro">Nome Do Carro</label>
+        <input type="text" name="nomeDoCarro">
 
-        <label for="preco">Preco</label>
-        <input type="text" name="preco" value="{{$produto->preco}}">
+        <label for="dtVenda">Data Venda</label>
+        <input type="text" name="dtVenda">
+
+        <label for="dtEntrega">Data Entrega</label>
+        <input type="text" name="dtEntrega">
+
+        <label for="preco">Preço</label>
+        <input type="text" name="preco">
 
         <input id="btn" type="submit" value="Salvar">
     </form>
